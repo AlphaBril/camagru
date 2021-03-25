@@ -13,7 +13,7 @@ RUN docker-php-ext-install pdo pdo_mysql gd
 
 COPY conf/camagru.conf /etc/apache2/sites-available/camagru.conf
 COPY conf/ssmtp.conf /etc/ssmtp/ssmtp.conf
-COPY html/ /var/www/html/
+COPY http/ /var/www/html/
 RUN echo "sendmail_path = /usr/sbin/ssmtp -t" >> /usr/local/etc/php/php.ini
 
 RUN a2enmod rewrite
