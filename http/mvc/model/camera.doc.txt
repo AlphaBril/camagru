@@ -1,0 +1,8 @@
+<------------------------------------------------------------------------------
+Class camera extends bdd :
+	This class contain one public function used by camera controller
+
+public function addimg($user, $date, $name) :
+	Exec 3 query to get the id of username, insert a new picture with path
+and update the number of publication of the user.
+------------------------------------------------------------------------------>

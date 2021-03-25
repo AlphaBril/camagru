@@ -1,0 +1,12 @@
+<------------------------------------------------------------------------------
+Class search extends bdd :
+	This class contain two public functions. It is used
+by search controller.
+
+public function getuser($user) :
+	Return username, avatar, publication, floowers, follwed of
+the $user.
+
+public function getlist() :
+	Return the entire list of users ordered by desc.
+------------------------------------------------------------------------------>

@@ -1,0 +1,26 @@
+<------------------------------------------------------------------------------
+Class home extends bdd :
+	This class contain 6 public functions used by home controller
+
+public function like($id_pic, $user, $date, $yes) :
+	Will add a like for $id_pic in table Likes with $date and $user if
+$yes is at 1. if yes is at 2 will delete the like from the table. Each
+action insert a new notification in table Notification.
+
+public function isliked($id_pic, $user)
+	Check if the actueal picture is liked by the user.
+
+public function writecomment($from_user, $picture_id, $comment, $date)
+	Add a comment in table Comments, add a notification in table notification
+and update the number of notification of the current user.
+
+public function getcomments($id)
+	Return all comments that correspond to the id pic.
+
+public function getinfo($id)
+	Return the username and avatar of the user that correspond to the id
+
+public function storyline($user)
+	Return all the pictures inside the table Pictures. If $user is not null,
+will return only the picture from this user.
+------------------------------------------------------------------------------>

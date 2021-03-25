@@ -1,0 +1,28 @@
+<------------------------------------------------------------------------------
+Class notification extends bdd :
+	This class contain seven public functions. It is used
+by notification controller.
+
+public function notifsaw($notif_id) :
+	Update the db when the user have saw the notification
+that correspond to $notif_id.
+
+public function isnotified($user) :
+	Return the number of notification the user haven't saw.
+
+public function getnotifications($user)
+	Return all the notifications that corresponds to the $user.
+
+public function writemessage($message, $to $from, $date)
+	Insert a new message inside table Chat.
+
+public function getchat($user, $from_user)
+	Gather and return alle chat message that are sent to $user by $from_user
+or to $from_user $by $user.
+
+public function getuserinfo($from_user)
+	Return avatar and username of $from_user.
+
+public function getlinks($user)
+	Return the list of user from wich $user is subscribed.
+------------------------------------------------------------------------------>

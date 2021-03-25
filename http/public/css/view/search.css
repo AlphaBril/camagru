@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1024px)
+{
+	form#formsearch
+	{
+		width: 100%;
+		margin: 0;
+	}
+	div#results_search
+	{
+		width: 100%;
+	}
+	div#suggestion
+	{
+		width: 100%;
+	}
+}
+#formsearch
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	width: 40%;
+}
+#results_search
+{
+	border: 1px solid #efefef;
+	height: 60%;
+	width: 60%;
+}
+#iframe-cont
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+#iframe
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+#suggestion
+{
+	border: 1px solid #efefef;
+	height: 20%;
+	overflow: hidden;
+	width: 80%;
+}
+#suggestion::-webkit-scrollbar
+{
+	width: 0 !important;
+}
+.suggestions
+{
+	border: 1px solid #efefef;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 20%;
+}
+.other
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+.usersearch
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.littleavatarsearch
+{
+	height: 10vh;
+	border-radius: 50%;
+}
+.autocomplete
+{
+	/*the container must be positioned relative:*/
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.autocomplete-items
+{
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+.autocomplete-items div
+{
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+	border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover
+{
+	background-color: #e9e9e9;
+}
+.autocomplete-active
+{
+	background-color: DodgerBlue !important;
+	color: #ffffff;
+}

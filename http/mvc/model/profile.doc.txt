@@ -1,0 +1,25 @@
+<------------------------------------------------------------------------------
+Class profile extends bdd :
+	This class contain six public functions. It is used
+by profile controller.
+
+public function changepp($user, $newpp) :
+	Update the avatar for $user with $newpp.
+
+public function isfollowed($followed, $follower) :
+	Return 1 if $followed is followed by $follower or return 0..
+
+public function subscribe($user, $follow, $yes, $date)
+	Insert $user inside Links to follow $follow and add a notification about it
+if $yes is 1, if $yes is 2 will remove the subscribe and setn a notification.
+
+public function getuserpictures($from_user)
+	Return all the pictures $from_user have created.
+
+public function deletepictures($picture)
+	Remove from the database th $picture.
+
+public function getuserinfo($from_user)
+	Return avatar, number of publications, number of followers, number 
+of followed people of $from_user.
+------------------------------------------------------------------------------>

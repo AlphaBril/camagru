@@ -1,0 +1,28 @@
+<------------------------------------------------------------------------------
+Class account extend bdd:
+	This class contain six function that will work with the db to
+return information to the controller.
+
+public function	changenotify($notif) :
+	Take an int in entry (1 or 2) if the int is equal to 2, will
+activate the mail subscription in the db for the actual user.
+
+public function	notified($user) :
+	Ask the db if the user have the mail subscription activated or not
+return 0 for no 1 for yes.
+
+public function	swap($user, $newusername, $newemail, $newpass)
+	This function will change the username, the email, and the password
+of the $user if they are valid (different from NULL).
+
+public function	getimg($username)
+	Return the avatar path of the user.
+
+public function	checktoken($username, $token)
+	Check if the token is the right one with the username, if it is
+will accord the modification by returning 1, and destroy the token.
+
+public function check($username, $passwd)
+	Accept the modification of credentials by returning 1 if the password
+is the good one with the db.
+------------------------------------------------------------------------------>

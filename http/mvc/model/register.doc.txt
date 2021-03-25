@@ -1,0 +1,16 @@
+<------------------------------------------------------------------------------
+Class register extends bdd :
+	This class contain three public functions. It is used
+by register controller.
+
+public function check($username, $email) :
+	Return 0 if the username or the email is alreday taken or 1.
+
+public function validate($username, $token) :
+	Update the account to validated if the token and username corresponds
+to those inside the database.
+
+public function register($username, $email, $passwd, $time)
+	Create an account for $username, $email, $passwd at $time with basics
+values and send an email of confirmation to $email.
+------------------------------------------------------------------------------>

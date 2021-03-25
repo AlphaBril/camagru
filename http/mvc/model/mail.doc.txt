@@ -1,0 +1,25 @@
+<------------------------------------------------------------------------------
+Class mail extends bdd :
+	This class contain one private function and 4 public function. It is used
+by home class and ajax controller for sending mail to the user.
+
+private function _constructmail($content) :
+	Create the corps of the html mail with css style and set the content
+inside $content;
+
+public function sendnotif($email) :
+	Create the content of mail for a notification, and sent it with mail
+to $email.
+
+public function activateaccount($email, $token, $username)
+	Create the content of activation mail and sent it to $email, the $username
+must match the account name, and the $token the token created on registration
+
+public function sendsupport($email, $subject, $problem)
+	Send one mail to $email to make sure we are working on teir problem and
+another one to the admin for support.
+
+public function sendreset($email)
+	if the $email exist inside the db, will create a token and send an email
+to change settings.
+------------------------------------------------------------------------------>

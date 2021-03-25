@@ -1,0 +1,11 @@
+<------------------------------------------------------------------------------
+Class bdd :
+	This class contain one protected function that allow 
+and return a PDO connection on the mysql database
+
+Usage : $bdd = new bdd;
+		$db = $bdd->_dbConnect();
+
+protected function _dbConnect() :
+	return the PDO on the mysql database
+------------------------------------------------------------------------------>

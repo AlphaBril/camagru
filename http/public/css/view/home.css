@@ -1,0 +1,77 @@
+#storyline
+{
+	justify-content: start;
+}
+#text
+{
+	padding-left: 10px;
+}
+.storyframe
+{
+	width: 100%
+	padding-top: 10px;
+}
+.story
+{
+	padding-top: 10px;
+	width: 60%;
+}
+@media only screen and (max-width: 1024px)
+{
+	div.story
+	{
+		width: 100%;
+	}
+}
+.storyimg
+{
+	width: 100%;
+}
+.storyactionimg
+{
+	height: 4vh;;
+}
+.storyinfo
+{
+	border: 1px solid #efefef;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	height: 5vh;
+	padding: 2px;
+}
+.storycomments
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	padding: 2px;
+}
+.storycomment
+{
+	border: 1px solid #efefef;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+.name
+{
+	font-size: 3vh;
+	padding-left: 10px;
+}
+.comments
+{
+	font-size: 2vh;
+	padding-left: 10px;
+}
+#storyline
+{
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+#storyline::-webkit-scrollbar
+{
+	width: 0 !important;
+}

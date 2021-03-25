@@ -1,0 +1,97 @@
+#whole
+{
+	justify-content: start;
+}
+#profile
+{
+	padding-top: 10px;
+	height: 100%;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+#profile::-webkit-scrollbar
+{
+	width: 0 !important;
+}
+@media only screen and (max-width: 1024px)
+{
+	div#profile
+	{
+		width: 100%;
+	}
+	div.profilepics
+	{
+		width: 33.3vw;
+		height: 33.3vw;
+	}
+}
+#profileinfo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+#avatar
+{
+	height: 10vh;
+	border-radius: 50%;
+}
+#profilepictures
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.modal
+{
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.del
+{
+	background-color: red;
+	text-align: center;
+	position: absolute;
+	border-radius: 50%;
+	top: 5%;
+	right: 5%;
+}
+.profileinfotext
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	font-size: 3vw;
+}
+.pitp
+{
+	margin: 0;
+}
+.profilepics
+{
+	position: relative;
+	overflow: hidden;
+	height: 20vw;
+	width: 20vw;
+}
+.imgprofilepics
+{
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
+}

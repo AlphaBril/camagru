@@ -1,0 +1,9 @@
+<------------------------------------------------------------------------------
+Class login extends bdd :
+	This class contain one public function used by login controller
+
+public function check($username, $passwd) :
+	Check if the password correspond to the username stored in database
+will return 1 to accept the connection if the account is activated and
+the password matches else will return 0.
+------------------------------------------------------------------------------>

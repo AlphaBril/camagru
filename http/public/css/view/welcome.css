@@ -1,0 +1,44 @@
+#title_home
+{
+	text-align: center;
+	font-size: 6vw;
+	margin: 0;
+}
+#display
+{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	height: 70%;
+	width: 80%;
+}
+.display_img
+{
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.hometxt
+{
+	color: #f2f2f2;
+	font-size: 3vh;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+}
+#launch
+{
+	width: 100%;
+	height: 100%;
+}
+#hometext
+{
+	font-size: 3vw;
+}
+#actionhome
+{
+	width: 80%;
+	height: 10%;
+}
