@@ -22,7 +22,7 @@ jobs:
         run: |
           cd ~/build/camagru
           NBR=$(git rev-parse HEAD)
-          docker build -t camagru:$NBR .
+          docker build -t camagru:$NBR -t camagru:latest .
 
       - name: Deploy
         run: |
