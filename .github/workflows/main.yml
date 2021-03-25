@@ -27,4 +27,4 @@ jobs:
       - name: Deploy
         run: |
           cd ~/websites/camagru
-          docker-compose up
+          docker-compose up -d
