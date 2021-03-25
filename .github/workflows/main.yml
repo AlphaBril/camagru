@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Pull
+        run: |
+          cd ~/build/camagru
+          git pull
+          
+      - name: Build
+        run: |
+          cd ~/build/camagru
+          NBR=$(git rev-parse HEAD)
+          docker build -t camagru:$NBR .
+
+      - name: Deploy
+        run: |
+          cd ~/websites/camagru
+          docker-compose up
